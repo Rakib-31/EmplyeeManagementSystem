@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EmployeeCreateComponent } from './components/employee-create/employee-create.component';
 import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { ApiService } from './service/api.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
